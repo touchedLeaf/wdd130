@@ -1,0 +1,46 @@
+/* Limit the width of the main element */
+main {
+    width: 800px; /* Adjust as needed */
+    margin: 0 auto; /* Center the main element */
+}
+
+/* Style the aside element */
+aside {
+    width: 300px; /* Adjust as needed */
+    margin: 20px auto; /* Center the aside element */
+    border: 1px solid #ccc; /* Light gray border */
+    padding: 10px; /* Space inside the border */
+    background-color: #f9f9f9; /* Light background color */
+    color: #333; /* Text color */
+}
+
+/* Ensure good contrast ratio */
+aside {
+    background-color: #f9f9f9; /* Light background color */
+    color: #333; /* Dark text color */
+}
+
+/* Style the image inside the aside */
+aside img {
+    width: 200px;
+    height: auto;
+}
+
+/* Make the existing image selector more exclusive */
+main img {
+    width: 200px;
+    height: auto;
+    /* Other existing styles */
+}
+
+/* Remove padding from all paragraphs */
+p {
+    padding: 0;
+}
+
+/* Style the footer */
+footer {
+    margin-top: 20px; /* Top margin to separate it from main content */
+    border-top: 1px solid #ccc; /* Top border for distinction */
+    text-align: center; /* Center the text */
+}
