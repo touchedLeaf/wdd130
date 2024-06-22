@@ -1,5 +1,7 @@
 /* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 /* CSS Variables */
 :root {
@@ -7,8 +9,8 @@
     --secondary-color: #e7c24f;
     --accent1-color: #a43312;
     --accent2-color: #381d2a;
-    --heading-font: 'Roboto', sans-serif;
-    --paragraph-font: 'Georgia', serif;
+    --heading-font: 'Oswald', sans-serif;
+    --paragraph-font: 'Merriweather', serif;
     --nav-background: #396e94;
     --nav-link-color: #fff;
     --nav-hover-link-color: #f0f0f0;
