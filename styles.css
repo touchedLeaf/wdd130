@@ -1,3 +1,10 @@
+/* Universal selector to reset margin, padding, and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* Limit the width of the main element */
 main {
     width: 800px; /* Adjust as needed */
@@ -12,6 +19,15 @@ aside {
     padding: 10px; /* Space inside the border */
     background-color: #f9f9f9; /* Light background color */
     color: #333; /* Text color */
+    position: relative; /* For absolute positioning of child elements */
+}
+
+aside h2 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 0.5rem;
 }
 
 /* Ensure good contrast ratio */
@@ -27,7 +43,9 @@ aside img {
 }
 
 /* Make the existing image selector more exclusive */
-main img {
+main img.profile-image {
+    float: right;
+    margin-left: 1rem;
     width: 200px;
     height: auto;
     /* Other existing styles */
@@ -43,4 +61,13 @@ footer {
     margin-top: 20px; /* Top margin to separate it from main content */
     border-top: 1px solid #ccc; /* Top border for distinction */
     text-align: center; /* Center the text */
+}
+
+/* Class Selectors */
+.box {
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid #000;
+    background-color: #f0f0f0;
+    color: #333;
 }
