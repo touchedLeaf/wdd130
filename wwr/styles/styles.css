@@ -1,0 +1,19 @@
+.hero {
+    position: relative;
+    height: 100vh;
+    background-image: url('images/happy.rafting.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff; /* Set text color to white for better contrast */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Add text shadow for better readability */
+  }
+  

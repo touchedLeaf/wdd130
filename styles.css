@@ -1,0 +1,102 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* CSS Variables */
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --background-color: #f8f9fa;
+    --text-color: #212529;
+    --header-footer-bg: #343a40;
+    --header-footer-text: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+header, .grid, footer {
+    max-width: 840px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+header, footer {
+    background-color: var(--header-footer-bg);
+    color: var(--header-footer-text);
+    text-align: center;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+header nav a {
+    color: var(--header-footer-text);
+    text-decoration: none;
+    padding: 0.5rem;
+    display: block;
+}
+
+header nav a:hover {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+}
+
+h1 {
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 0.5rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1rem;
+}
+
+aside {
+    grid-row: span 2;
+}
+
+aside img {
+    width: 100%;
+}
+
+main img {
+    float: right;
+    margin: 0 0 1rem 1rem;
+    width: 150px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 0.5rem 0;
+}
+
+ul li a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+footer p {
+    margin-bottom: 1rem;
+}
+

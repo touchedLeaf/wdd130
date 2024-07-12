@@ -1,0 +1,76 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
+
+/* Define CSS Variables */
+:root {
+    --primary-color: #396E94;
+    --secondary-color: #E7C24F;
+    --accent1-color: #A43312;
+    --accent2-color: #381D2A;
+    --heading-font: 'Roboto', sans-serif;
+    --paragraph-font: 'Open Sans', sans-serif;
+    --nav-background-color: #396E94;
+    --nav-link-color: #FFFFFF;
+    --nav-hover-link-color: #E7C24F;
+    --nav-hover-background-color: #A43312;
+}
+
+/* Body Styling */
+body {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+/* Header Styling */
+header {
+    padding: 20px;
+    background-color: var(--primary-color);
+    color: #FFFFFF;
+    text-align: center;
+}
+
+/* Main Content Styling */
+main {
+    padding: 20px;
+}
+
+/* Heading Styling */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+/* Paragraph Styling */
+p {
+    padding: 10px 0;
+}
+
+/* Navigation Styling */
+nav {
+    background-color: var(--nav-background-color);
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: var(--nav-link-color);
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 10px;
+}
+
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+
+/* Footer Styling */
+footer {
+    margin-top: 20px;
+    border-top: 1px solid var(--primary-color);
+    text-align: center;
+    padding-top: 10px;
+    color: var(--primary-color);
+}
