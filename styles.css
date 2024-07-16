@@ -100,3 +100,7 @@ footer p {
     margin-bottom: 1rem;
 }
 
+main {
+    max-width: 100%;
+    margin: 0 auto;
+}
