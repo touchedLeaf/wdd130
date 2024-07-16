@@ -21,6 +21,16 @@ body {
     background-color: #f0f0f0;
 }
 
+header, footer, .grid {
+    margin: 0 auto;
+    max-width: 840px;
+}
+
+.grid {
+    display: grid;
+    align-items: center;
+}
+
 header {
     background-color: #333;
     color: white;
