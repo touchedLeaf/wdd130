@@ -13,6 +13,18 @@ header {
   text-align: center;
 }
 
+.header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  max-width: 100px;
+  display: block;
+  margin: 0 auto 10px;
+}
+
 header nav a {
   color: #fff;
   margin: 0 1em;
@@ -32,62 +44,80 @@ h1, h2 {
   color: #333;
 }
 
-.contact-form {
-  background: #fff;
-  padding: 2em;
-  margin: 2em auto;
-  max-width: 600px;
+/* Hero section */
+.hero {
+  background-image: url('../images/rafting3.jpg'); /* Replace with your actual image path */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.hero-content {
+  background: rgba(0, 0, 0, 0.5); /* Add a dark overlay for better text visibility */
+  padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.contact-form .form-group {
-  margin-bottom: 1em;
+.hero-content h1 {
+  font-size: 3em;
+  margin: 0;
 }
 
-.contact-form label {
-  display: block;
-  margin-bottom: 0.5em;
+.hero-content p {
+  font-size: 1.5em;
+  margin: 10px 0;
 }
 
-.contact-form input[type="text"],
-.contact-form input[type="email"],
-.contact-form textarea {
-  width: 100%;
-  padding: 0.5em;
-  border: 1px solid #ddd;
+.cta-button {
+  background-color: #ff6600;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
   border-radius: 5px;
+  font-size: 1.2em;
+  margin-top: 10px;
 }
 
-.contact-form input[type="radio"],
-.contact-form input[type="checkbox"] {
-  margin-right: 0.5em;
+.cta-button:hover {
+  background-color: #e65c00;
 }
 
-.contact-form button {
-  display: inline-block;
-  padding: 0.7em 1.5em;
-  border: none;
-  background: #333;
-  color: #fff;
-  border-radius: 5px;
-  cursor: pointer;
+figure {
+  margin: 1em 0;
   text-align: center;
 }
 
-.contact-form button:hover {
-  background: #555;
+figure img {
+  max-width: 80%; /* Set a maximum width for images to ensure they are smaller than the hero */
+  height: auto;
+  border-radius: 10px;
 }
 
-.map {
-  text-align: center;
-  margin: 2em 0;
+figure figcaption {
+  margin-top: 0.5em;
+  font-style: italic;
+  color: #555;
 }
 
-.map iframe {
-  border: 0;
-  width: 100%;
-  height: 450px;
+/* Trips page specific styles */
+h1 {
+  color: #000; /* Ensure the main heading is black */
+}
+
+.trip-descriptions article h2 {
+  color: #000; /* Ensure the trip article headings are black */
+}
+
+.trip-descriptions article img {
+  max-width: 80%; /* Ensure the trip images are smaller than the hero */
+  height: auto;
+  border-radius: 10px;
 }
 
 footer {
@@ -95,16 +125,6 @@ footer {
   color: #fff;
   padding: 1em 0;
   text-align: center;
-}
-
-footer nav a {
-  color: #fff;
-  margin: 0 1em;
-  text-decoration: none;
-}
-
-footer nav a:hover {
-  text-decoration: underline;
 }
 
 footer .social-media {
@@ -123,12 +143,21 @@ footer p {
 
 /* Responsive styles */
 @media (max-width: 768px) {
-  .contact-form {
-    padding: 1em;
+  .hero-content h1 {
+    font-size: 2em;
   }
 
-  .map iframe {
-    height: 300px;
+  .hero-content p {
+    font-size: 1em;
+  }
+
+  .cta-button {
+    font-size: 1em;
+    padding: 8px 16px;
+  }
+
+  figure img {
+    max-width: 90%;
   }
 
   footer .social-media a img {
