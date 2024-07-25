@@ -3,15 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Whitewater Rafting Adventures</title>
     <meta name="description" content="Contact us for more information about our whitewater rafting adventures.">
     <meta name="author" content="Austin Peacock">
+    <title>Whitewater Rafting Adventures | Contact Us</title>
     <link rel="stylesheet" href="styles/rafting.css">
-    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
     <header>
-        <img src="images/new rafting logo.jpg" alt="Whitewater Rafting Adventures Logo">
+        <img src="images/new-rafting-logo.jpg.jpg" alt="Whitewater Rafting Adventures Logo" class="logo">
         <h1>Whitewater Rafting Adventures</h1>
         <nav>
             <a href="index.html">Home</a>
@@ -23,8 +22,8 @@
 
     <main>
         <section class="contact-form">
-            <h1>Contact Us</h1>
-            <form action="#" method="POST">
+            <h2>Contact Us</h2>
+            <form action="submit_form.php" method="post">
                 <div class="form-group">
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="name" required>
@@ -53,11 +52,12 @@
                 <button type="submit">Send Message</button>
             </form>
         </section>
+
         <section class="map">
             <h2>Our Location</h2>
             <iframe 
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.1757638480587!2d-122.08424968468123!3d37.42206577982464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fba1df94b4b83%3A0x2b1a5d8f7c0f0e8!2sGoogleplex!5e0!3m2!1sen!2sus!4v1634172559394!5m2!1sen!2sus"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" aria-label="Google Maps location of our office"></iframe>
         </section>
     </main>
 
@@ -69,13 +69,13 @@
             <a href="contact.html">Contact Us</a>
         </nav>
         <div class="social-media">
-            <a href="https://facebook.com"><img src="images/facebook.jpg" alt="Facebook"></a>
-            <a href="https://twitter.com"><img src="images/twitter.avif" alt="Twitter"></a>
-            <a href="https://instagram.com"><img src="images/instagram.webp" alt="Instagram"></a>
-            <a href="https://youtube.com"><img src="images/youtube.webp" alt="YouTube"></a>
-            <a href="https://linkedin.com"><img src="images/linkin.png" alt="LinkedIn"></a>
-            <a href="https://pinterest.com"><img src="images/pinterst.jpg" alt="Pinterest"></a>
-            <a href="#"><img src="images/new rafting logo.jpg" alt="Example"></a>
+            <a href="https://facebook.com" aria-label="Facebook"><img src="images/facebook.jpg" alt="Facebook" class="social-media-icon"></a>
+            <a href="https://twitter.com" aria-label="Twitter"><img src="images/twitter.avif" alt="Twitter" class="social-media-icon"></a>
+            <a href="https://instagram.com" aria-label="Instagram"><img src="images/instagram.webp" alt="Instagram" class="social-media-icon"></a>
+            <a href="https://youtube.com" aria-label="YouTube"><img src="images/youtube.webp" alt="YouTube" class="social-media-icon"></a>
+            <a href="https://linkedin.com" aria-label="LinkedIn"><img src="images/linkin.png" alt="LinkedIn" class="social-media-icon"></a>
+            <a href="https://pinterest.com" aria-label="Pinterest"><img src="images/pinterst.jpg" alt="Pinterest" class="social-media-icon"></a>
+            <a href="#" aria-label="Example"><img src="images/new-rafting-logo.jpg.jpg" alt="Example" class="social-media-icon"></a>
         </div>
         <p>© 2024 Whitewater Rafting Adventures. All rights reserved.</p>
     </footer>

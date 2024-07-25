@@ -86,6 +86,7 @@ a:hover {
   background-color: #0033aa;
 }
 
+/* Grid layout for the Trips page */
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -385,4 +386,95 @@ footer nav a:hover {
   margin-top: 0.5rem;
   font-style: italic;
   color: #555;
+}
+
+/* Media Queries for Responsive Design */
+
+/* Mobile Styles */
+@media (max-width: 767px) {
+  .grid-container {
+    grid-template-areas:
+      'header'
+      'main'
+      'nav'
+      'aside'
+      'footer';
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    padding: 1em;
+    background-size: contain;
+  }
+
+  .cta-button {
+    padding: 0.5em 1em;
+  }
+
+  .contact-form {
+    padding: 1rem;
+  }
+
+  .header-container {
+    flex-direction: column;
+  }
+}
+
+/* Tablets and Small Laptops */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .grid-container {
+    grid-template-areas:
+      'header header header'
+      'main main aside'
+      'footer footer footer';
+  }
+
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hero {
+    padding: 1.5em;
+  }
+
+  .cta-button {
+    padding: 0.6em 1.2em;
+  }
+
+  .contact-form {
+    padding: 1.5rem;
+  }
+
+  .header-container {
+    flex-direction: row;
+  }
+}
+
+/* Large Screens and Desktops */
+@media (min-width: 1025px) {
+  .grid-container {
+    grid-template-areas:
+      'header header header'
+      'nav main aside'
+      'footer footer footer';
+  }
+
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hero {
+    padding: 2em;
+  }
+
+  .cta-button {
+    padding: 0.7em 1.5em;
+  }
+
+  .contact-form {
+    padding: 2rem;
+  }
 }
