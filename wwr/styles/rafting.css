@@ -58,7 +58,7 @@ a:hover {
 .hero {
   text-align: center;
   padding: 2em;
-  background-image: url('../images/hero-bg.jpg'); /* Ensure a relevant background image */
+  background-image: url('../images/family.jpg'); /* Ensure a relevant background image */
   background-size: cover;
   background-position: center;
   color: #fff; /* Ensure text is readable on the background */
