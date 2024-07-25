@@ -58,8 +58,9 @@ a:hover {
 .hero {
   text-align: center;
   padding: 2em;
-  background-image: url('../images/trip3.2.jpg'); /* Ensure a relevant background image */
+  background-image: url('../images/hero-bg.jpg'); /* Ensure a relevant background image */
   background-size: cover;
+  background-position: center;
   color: #fff; /* Ensure text is readable on the background */
 }
 
@@ -107,9 +108,11 @@ a:hover {
   flex-direction: column;
   max-width: 600px;
   margin: auto;
-  padding: 1em;
+  padding: 2rem; /* Adjusted padding for consistency */
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow */
 }
 
 .contact-form label {
@@ -136,6 +139,7 @@ a:hover {
 .contact-form button:hover {
   background-color: #0033aa;
 }
+
 /* Styles for the social media container */
 .social-media {
   display: flex; /* Use flexbox for alignment */
@@ -151,15 +155,9 @@ a:hover {
   transition: transform 0.3s; /* Smooth scaling on hover */
 }
 
-/* Optional: Add a hover effect */
 .social-media-icon:hover {
   transform: scale(1.1); /* Slightly enlarge icon on hover */
 }
-/* Style for the figure element */
-figure {
-  margin: 10px; /* Space around the figure */
-  text-align: center; /* Center-align the caption */
-}
 
 /* Style for the figure element */
 figure {
@@ -167,7 +165,6 @@ figure {
   text-align: center; /* Center-align the caption */
 }
 
-/* Style for images inside figure */
 figure img {
   width: 100%; /* Adjust width to fit the container */
   max-width: 300px; /* Increase maximum width of the images */
@@ -176,12 +173,12 @@ figure img {
   box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Optional: Add a subtle shadow */
 }
 
-/* Style for figcaption */
 figcaption {
   margin-top: 5px; /* Space above the caption */
   font-size: 0.9em; /* Slightly smaller font size */
   color: #555; /* Darker gray color for the text */
 }
+
 /* Header Container */
 .header-container {
     display: flex;
@@ -300,6 +297,7 @@ footer nav a:hover {
 .social-media a:hover img {
     opacity: 0.8; /* Add a hover effect for social media icons */
 }
+
 /* Trip Descriptions Section */
 .trip-descriptions {
   display: flex;
@@ -360,6 +358,7 @@ footer nav a:hover {
 .trip-table tr:nth-child(even) {
   background-color: #f9f9f9;
 }
+
 /* Featured Trips Section */
 .featured-trips {
   display: flex;
@@ -386,23 +385,4 @@ footer nav a:hover {
   margin-top: 0.5rem;
   font-style: italic;
   color: #555;
-}
-
-/* Social Media Icons */
-.social-media {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  margin-top: 1rem;
-}
-
-.social-media a img {
-  width: 30px; /* Adjust size as needed */
-  height: auto;
-  border-radius: 50%;
-  transition: transform 0.3s ease;
-}
-
-.social-media a img:hover {
-  transform: scale(1.1);
 }
