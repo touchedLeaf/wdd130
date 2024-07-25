@@ -1,138 +1,78 @@
-/* General styles */
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* CSS Variables */
+:root {
+    --primary-color: #396E94;
+    --secondary-color: #E7C24F;
+    --accent1-color: #A43312;
+    --accent2-color: #381D2A;
+    --heading-font: 'Roboto', sans-serif;
+    --paragraph-font: 'Open Sans', sans-serif;
+    --nav-background-color: var(--primary-color);
+    --nav-link-color: var(--secondary-color);
+    --nav-hover-link-color: var(--accent1-color);
+    --nav-hover-background-color: var(--accent2-color);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f4;
+    font-family: var(--paragraph-font);
+    color: #212529;
+    background-color: #f8f9fa;
 }
 
 header {
-  background: #333;
-  color: #fff;
-  padding: 1em 0;
-  text-align: center;
+    background-color: var(--nav-background-color);
+    color: var(--nav-link-color);
+    padding: 1rem;
+    text-align: center;
 }
 
-header nav a {
-  color: #fff;
-  margin: 0 1em;
-  text-decoration: none;
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
 }
 
-header nav a:hover {
-  text-decoration: underline;
+p {
+    margin-bottom: 1rem;
 }
 
-main {
-  padding: 1em;
+nav {
+    background-color: var(--nav-background-color);
+    padding: 1rem;
+    text-align: center;
 }
 
-h1, h2 {
-  text-align: center;
-  color: #333;
+nav a {
+    color: var(--nav-link-color);
+    text-decoration: none;
+    padding: 0.5rem;
+    margin: 0 0.5rem;
+    display: inline-block;
 }
 
-.contact-form {
-  background: #fff;
-  padding: 2em;
-  margin: 2em auto;
-  max-width: 600px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+nav a:link {
+    color: var(--nav-link-color);
 }
 
-.contact-form .form-group {
-  margin-bottom: 1em;
+nav a:visited {
+    color: var(--nav-link-color);
 }
 
-.contact-form label {
-  display: block;
-  margin-bottom: 0.5em;
-}
-
-.contact-form input[type="text"],
-.contact-form input[type="email"],
-.contact-form textarea {
-  width: 100%;
-  padding: 0.5em;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-}
-
-.contact-form input[type="radio"],
-.contact-form input[type="checkbox"] {
-  margin-right: 0.5em;
-}
-
-.contact-form button {
-  display: inline-block;
-  padding: 0.7em 1.5em;
-  border: none;
-  background: #333;
-  color: #fff;
-  border-radius: 5px;
-  cursor: pointer;
-  text-align: center;
-}
-
-.contact-form button:hover {
-  background: #555;
-}
-
-.map {
-  text-align: center;
-  margin: 2em 0;
-}
-
-.map iframe {
-  border: 0;
-  width: 100%;
-  height: 450px;
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
 }
 
 footer {
-  background: #333;
-  color: #fff;
-  padding: 1em 0;
-  text-align: center;
-}
-
-footer nav a {
-  color: #fff;
-  margin: 0 1em;
-  text-decoration: none;
-}
-
-footer nav a:hover {
-  text-decoration: underline;
-}
-
-footer .social-media {
-  margin: 1em 0;
-}
-
-footer .social-media a img {
-  width: 32px;
-  height: 32px;
-  margin: 0 0.5em;
-}
-
-footer p {
-  margin: 0;
-}
-
-/* Responsive styles */
-@media (max-width: 768px) {
-  .contact-form {
-    padding: 1em;
-  }
-
-  .map iframe {
-    height: 300px;
-  }
-
-  footer .social-media a img {
-    width: 24px;
-    height: 24px;
-  }
+    background-color: var(--nav-background-color);
+    color: var(--nav-link-color);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
 }

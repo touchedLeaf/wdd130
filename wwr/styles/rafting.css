@@ -1,167 +1,408 @@
 /* General styles */
 body {
+  background-color: #ffffff;
+  color: #000000; /* Ensure sufficient contrast */
   font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f4;
 }
 
-header {
-  background: #333;
-  color: #fff;
-  padding: 1em 0;
+a {
+  color: #0044cc; /* Ensure links have good contrast */
+}
+
+a:hover {
+  color: #0033aa;
+}
+
+/* Header, nav, and footer styles */
+.header {
+  background-color: #0044cc;
+  color: white;
+  padding: 1em;
   text-align: center;
 }
 
-.header-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.logo {
-  max-width: 100px;
-  display: block;
-  margin: 0 auto 10px;
-}
-
-header nav a {
-  color: #fff;
-  margin: 0 1em;
-  text-decoration: none;
-}
-
-header nav a:hover {
-  text-decoration: underline;
-}
-
-main {
+.nav {
+  background-color: #f0f0f0;
   padding: 1em;
 }
 
-h1, h2 {
+.footer {
+  background-color: #0044cc;
+  color: white;
+  padding: 1em;
   text-align: center;
-  color: #333;
 }
 
-/* Hero section */
+/* Grid layout specific to the rafting site */
+.grid-container {
+  display: grid;
+  grid-template-areas:
+      'header header header'
+      'nav main aside'
+      'footer footer footer';
+  grid-gap: 10px;
+}
+
+.main {
+  grid-area: main;
+  background-color: #fff;
+  padding: 1em;
+}
+
+.aside {
+  grid-area: aside;
+  background-color: #f0f0f0;
+  padding: 1em;
+}
+
 .hero {
-  background-image: url('../images/rafting3.jpg'); /* Replace with your actual image path */
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
   text-align: center;
-  position: relative;
+  padding: 2em;
+  background-image: url('../images/trip3.2.jpg'); /* Ensure a relevant background image */
+  background-size: cover;
+  color: #fff; /* Ensure text is readable on the background */
 }
 
 .hero-content {
-  background: rgba(0, 0, 0, 0.5); /* Add a dark overlay for better text visibility */
-  padding: 20px;
-  border-radius: 10px;
-}
-
-.hero-content h1 {
-  font-size: 3em;
-  margin: 0;
-}
-
-.hero-content p {
-  font-size: 1.5em;
-  margin: 10px 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background for better readability */
+  padding: 2em;
+  border-radius: 5px;
 }
 
 .cta-button {
-  background-color: #ff6600;
-  color: white;
-  padding: 10px 20px;
-  text-decoration: none;
+  display: inline-block;
+  margin-top: 1em;
+  padding: 0.7em 1.5em;
+  color: #fff;
+  background-color: #0044cc;
+  border: none;
   border-radius: 5px;
-  font-size: 1.2em;
-  margin-top: 10px;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .cta-button:hover {
-  background-color: #e65c00;
+  background-color: #0033aa;
 }
 
-figure {
-  margin: 1em 0;
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin: 2em 0;
+}
+
+.grid-item {
   text-align: center;
 }
 
-figure img {
-  max-width: 80%; /* Set a maximum width for images to ensure they are smaller than the hero */
-  height: auto;
-  border-radius: 10px;
+.grid-item img {
+  max-width: 100%;
+  border-radius: 5px;
 }
 
-figure figcaption {
-  margin-top: 0.5em;
+/* Contact form styling */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: auto;
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form label {
+  margin-bottom: 0.5em;
+  font-weight: bold;
+}
+
+.contact-form input, .contact-form textarea {
+  margin-bottom: 1em;
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  padding: 0.7em;
+  color: #fff;
+  background-color: #0044cc;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #0033aa;
+}
+/* Styles for the social media container */
+.social-media {
+  display: flex; /* Use flexbox for alignment */
+  justify-content: center; /* Center the icons horizontally */
+  gap: 10px; /* Space between icons */
+  padding: 10px 0; /* Padding around the container */
+}
+
+/* Styles for the social media icons */
+.social-media-icon {
+  width: 30px; /* Set width of the icons */
+  height: auto; /* Maintain aspect ratio */
+  transition: transform 0.3s; /* Smooth scaling on hover */
+}
+
+/* Optional: Add a hover effect */
+.social-media-icon:hover {
+  transform: scale(1.1); /* Slightly enlarge icon on hover */
+}
+/* Style for the figure element */
+figure {
+  margin: 10px; /* Space around the figure */
+  text-align: center; /* Center-align the caption */
+}
+
+/* Style for the figure element */
+figure {
+  margin: 10px; /* Space around the figure */
+  text-align: center; /* Center-align the caption */
+}
+
+/* Style for images inside figure */
+figure img {
+  width: 100%; /* Adjust width to fit the container */
+  max-width: 300px; /* Increase maximum width of the images */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 5px; /* Optional: Add rounded corners */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Optional: Add a subtle shadow */
+}
+
+/* Style for figcaption */
+figcaption {
+  margin-top: 5px; /* Space above the caption */
+  font-size: 0.9em; /* Slightly smaller font size */
+  color: #555; /* Darker gray color for the text */
+}
+/* Header Container */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #f8f8f8;
+}
+
+/* Logo in Header */
+.header-container .logo {
+    max-width: 150px; /* Adjust size of the logo */
+}
+
+/* Navigation Menu */
+header nav a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 15px;
+    font-size: 1rem;
+}
+
+header nav a:hover {
+    color: #007BFF; /* Add a hover effect */
+}
+
+/* Contact Form Section */
+.contact-form {
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Map Section */
+.map {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.map iframe {
+    border: 0;
+    border-radius: 8px;
+}
+
+/* Footer Navigation and Social Media */
+footer {
+    padding: 2rem;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+footer nav a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 15px;
+}
+
+footer nav a:hover {
+    color: #007BFF;
+}
+
+/* Social Media Icons */
+.social-media {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.social-media a {
+    margin: 0 10px;
+}
+
+.social-media img {
+    width: 24px; /* Adjust size of the social media icons */
+    height: auto;
+}
+
+.social-media a:hover img {
+    opacity: 0.8; /* Add a hover effect for social media icons */
+}
+/* Trip Descriptions Section */
+.trip-descriptions {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.trip-descriptions article {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+/* Figure and Image Styles */
+.trip-descriptions figure {
+  margin: 0;
+  text-align: center;
+}
+
+.trip-descriptions img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.trip-descriptions figcaption {
+  margin-top: 0.5rem;
   font-style: italic;
   color: #555;
 }
 
-/* Trips page specific styles */
-h1 {
-  color: #000; /* Ensure the main heading is black */
+/* Table Styles */
+.trip-table {
+  margin-top: 2rem;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.trip-descriptions article h2 {
-  color: #000; /* Ensure the trip article headings are black */
+.trip-table table {
+  width: 100%;
+  border-collapse: collapse;
 }
 
-.trip-descriptions article img {
-  max-width: 80%; /* Ensure the trip images are smaller than the hero */
-  height: auto;
-  border-radius: 10px;
+.trip-table th,
+.trip-table td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
 }
 
-footer {
-  background: #333;
-  color: #fff;
-  padding: 1em 0;
-  text-align: center;
+.trip-table th {
+  background-color: #f4f4f4;
 }
 
-footer .social-media {
-  margin: 1em 0;
+.trip-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+/* Featured Trips Section */
+.featured-trips {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
-footer .social-media a img {
-  width: 32px;
-  height: 32px;
-  margin: 0 0.5em;
-}
-
-footer p {
+.featured-trips figure {
   margin: 0;
+  text-align: center;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: #fff;
 }
 
-/* Responsive styles */
-@media (max-width: 768px) {
-  .hero-content h1 {
-    font-size: 2em;
-  }
+.featured-trips img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
 
-  .hero-content p {
-    font-size: 1em;
-  }
+.featured-trips figcaption {
+  margin-top: 0.5rem;
+  font-style: italic;
+  color: #555;
+}
 
-  .cta-button {
-    font-size: 1em;
-    padding: 8px 16px;
-  }
+/* Social Media Icons */
+.social-media {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
 
-  figure img {
-    max-width: 90%;
-  }
+.social-media a img {
+  width: 30px; /* Adjust size as needed */
+  height: auto;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
 
-  footer .social-media a img {
-    width: 24px;
-    height: 24px;
-  }
+.social-media a img:hover {
+  transform: scale(1.1);
 }
